@@ -1,10 +1,26 @@
-// Fonction utilisée 
-function split() {
-    let n = process.argv.length;
-    for (let i = 2; i < n; i++) {
-        let arg = process.argv[i];
-        console.log(arg);
+// Fonction de découpe sans utiliser split
+function customSplit(arg, separateur) {
+    let mots = [];
+    let mot = '';
+
+    for (let i = 0; i < arg.length; i++) {
+        let caractereCourant = arg[i];
+
+        if (caractereCourant !== separateur) {
+            mot += caractereCourant;
+        } else {
+            mots.push(mot);
+            mot = '';
+        }
+        
+        if(separateur === undefined){
+            separateur = " "
+        }
     }
+
+    mots.push(mot);
+
+    return mots;
 }
 
 // Parsing
@@ -13,9 +29,9 @@ function getArgument() {
     return arguments;
 }
 
-// Resolution
+// Résolution
 let myArguments = getArgument();
-let result = split(myArguments)
+let result = customSplit(myArguments[0], myArguments[1]); 
 
 // Affichage
 console.log(result);
