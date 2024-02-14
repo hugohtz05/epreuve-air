@@ -1,4 +1,4 @@
-//Fonction utilisées
+//Fonction utilisée
 function showIntruder(arg) {
     let unique = "il n'y a pas de chiffre impair";
     for (let i = 0; i < arg.length; i++) {
@@ -17,16 +17,17 @@ function showIntruder(arg) {
     console.log(unique);
 }
 
-
-//Gestion d'erreur
 //Parsing
 function getArgument(){
     let argument = process.argv.slice(2);
     return argument;
 }
 //Resolution
-let myArgument = getArgument();
-let result =  showIntruder(myArgument);
+function Résolution(){
+    let myArgument = getArgument();
+    let result =  showIntruder(myArgument); 
+    return result;
+}
 
 //affichage
-console.log(result);
+Résolution();
