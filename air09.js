@@ -30,5 +30,5 @@ function getArgument() {
 let myArguments = getArgument();
 let result = ma_rotation(myArguments);
 
-// Affichage du résultat
+// Affichage
 console.log(result.join(', '));
