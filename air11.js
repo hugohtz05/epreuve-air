@@ -1,7 +1,7 @@
 // Fonction utilisée
-function pyramid(arg, boucle) {
-    for (let i = 0; i < boucle; i++) {
-        const espaces = ' '.repeat(boucle - i - 1);
+function pyramid(arg, floor) {
+    for (let i = 0; i < floor; i++) {
+        const espaces = ' '.repeat(floor - i - 1);
         const caracteres = arg.repeat(2 * i + 1);
         console.log(espaces + caracteres);
     }
