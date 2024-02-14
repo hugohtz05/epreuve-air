@@ -34,7 +34,11 @@ function getArgument() {
 }
 
 // Résolution
-let myArguments = getArgument();
-let result = InsertingIntoASortedArray(myArguments.slice(0, -1).map(Number), Number(myArguments[myArguments.length - 1]));
+function Résolution(){
+  let myArguments = getArgument();
+  let result = InsertingIntoASortedArray(myArguments.slice(0, -1).map(Number), Number(myArguments[myArguments.length - 1]));
+  return result;
+}
+
 // Affichage
-console.log(result);
+Résolution();
