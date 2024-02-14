@@ -1,9 +1,9 @@
 // Fonction utilisée
 function getArrayWithoutLetter(arr, searchString) {
     const result = [];
+    
     for (let i = 0; i < arr.length; i++) {
         let containsLetter = false;
-
         for (let j = 0; j < arr[i].length; j++) {
             if (arr[i][j].toLowerCase() === searchString.toLowerCase()) {
                 containsLetter = true;
