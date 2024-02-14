@@ -1,3 +1,4 @@
+//fonction utilisée 
 function oneToOne(arg) {
     let newString = "";
     for (let i = 0; i < arg.length; i++) {
@@ -8,7 +9,7 @@ function oneToOne(arg) {
     return newString;
 }
 
-// Gestion d'erreur / Parsing
+//Parsing
 function getArgument() {
     let argument = process.argv.slice(2).join(" "); 
     return argument;
