@@ -43,5 +43,5 @@ const array2 = myArguments.slice(fusionIndex + 1).map(Number);
 
 const result = sorted_fusion(array1, array2);
 
-// Affichage du résultat
+// Affichage 
 console.log(result);
