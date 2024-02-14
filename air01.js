@@ -1,4 +1,4 @@
-// Fonction utilisée
+// Fonction utilisées
 function customSplit(arg, separateur) {
 
     let mots = [];
