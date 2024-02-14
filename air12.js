@@ -14,7 +14,7 @@ function myQuickSort(array) {
 // Parsing
 function getArgument() {
     let arguments = process.argv.slice(2);
-    return arguments.map(arg => parseInt(arg, 10)); // Convertir les arguments en nombres si nécessaire
+    return arguments.map(arg => parseInt(arg, 10));
 }
 
 // Résolution
