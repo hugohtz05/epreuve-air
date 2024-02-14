@@ -1,4 +1,4 @@
-// Fonction de découpe sans utiliser split
+// Fonction utilisée
 function customSplit(arg, separateur) {
 
     let mots = [];
